@@ -1,0 +1,741 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans';
+    margin: 0;
+    padding: 0;
+}
+html{
+    /*  permite deslizar cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+/* MENU */
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #1CB698;
+}
+.nav-responsive{
+    background-color: #1CB698;
+    color:#fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+/* SECCION I N I C I O */
+.INICIO {
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(img/fondo.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .INICIO .contenido-banner {
+    padding: 40px;
+    background-color: #1e2326;
+    max-width: 1600px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+  }
+  
+  .INICIO .contenido-banner .contenedor-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .INICIO .contenido-banner .contenedor-img img {
+    margin-top: 40px;
+    border: 10px solid #1CB698;
+    width: 80%;
+    border-radius: 100%;
+  }
+  
+  .INICIO .contenido-banner .contenedor-info {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .INICIO .contenido-banner .contenedor-info h1 {
+    margin-top: 40px;
+    font-size: 52px;
+    font-family: 'Righteous';
+  }
+  
+  .INICIO .contenido-banner .contenedor-info h2 {
+    font-size: 18px;
+    font-weight: normal;
+  }
+  
+  .INICIO .contenido-banner .contenedor-info .redes a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+  }
+  
+  .INICIO .contenido-banner .contenedor-info .redes a:hover {
+    background-color: #1CB698;
+  }
+/* SECCION DISEÑO */
+.DISEÑO {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.DISEÑO .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.DISEÑO h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.DISEÑO .contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.DISEÑO .contenido-seccion p span{
+    color: #1CB698;
+    font-weight: bold;
+}
+.DISEÑO .fila{
+    display: flex;
+}
+.DISEÑO .fila .col
+{
+    width: 50%;
+}
+.DISEÑO .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.DISEÑO .fila .col ul{
+    list-style: none;
+}
+.DISEÑO  .fila .col ul li{
+    margin: 12px 0;
+}
+.DISEÑO  .fila .col ul li strong{
+    display: inline-block;
+    color: #1CB698;
+    width: 130px;
+}
+.DISEÑO .fila .col ul li span{
+    background-color: #1CB698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.DISEÑO .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.DISEÑO.fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.DISEÑO .fila .col .contenedor-intereses .interes:hover{
+    background-color: #1CB698;
+}
+.DISEÑO .fila .col .contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.DISEÑO button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.DISEÑO button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.DISEÑO button:hover .overlay{
+    width: 100%;
+}
+
+/* SECCION AUTOCAD */
+.AUTOCAD {
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.AUTOCAD .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.AUTOCAD h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.AUTOCAD.contenido-seccion p{
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.AUTOCAD .contenido-seccion p span{
+    color: #1CB698;
+    font-weight: bold;
+}
+.AUTOCAD.fila{
+    display: flex;
+}
+.AUTOCAD.fila .col
+{
+    width: 50%;
+}
+.AUTOCAD .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.AUTOCAD .fila .col ul{
+    list-style: none;
+}
+.AUTOCAD .fila .col ul li{
+    margin: 12px 0;
+}
+.AUTOCAD  .fila .col ul li strong{
+    display: inline-block;
+    color: #1CB698;
+    width: 130px;
+}
+.AUTOCAD .fila .col ul li span{
+    background-color: #1CB698;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.AUTOCAD .fila .col .contenedor-intereses{
+    display: flex;
+    flex-wrap: wrap;
+}
+.AUTOCAD .fila .col .contenedor-intereses .interes{
+    width: 100px;
+    height: 100px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.AUTOCAD .fila .col .contenedor-intereses .interes:hover{
+    background-color: #1CB698;
+}
+.AUTOCAD .fila .col .contenedor-intereses .interes i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Elimina subrayado de los enlaces */
+.AUTOCAD a {
+    text-decoration: none; /* Quita la línea de subrayado */
+}
+
+/* Asegura que los enlaces con botones hereden el estilo */
+.AUTOCAD a button {
+    all: unset; /* Resetea los estilos por defecto */
+    cursor: pointer; /* Asegura que el cursor sea tipo botón */
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+/* Aplica el efecto de overlay al botón */
+.AUTOCAD a button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+
+.AUTOCAD a button:hover .overlay {
+    width: 100%;
+}
+
+
+/* SECCION HISTORIA */
+.HISTORIA{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.HISTORIA .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.HISTORIA h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+
+}
+.HISTORIA .fila{
+    display: flex;
+    justify-content: space-between;
+}
+.HISTORIA .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+.HISTORIA.fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+}
+.HISTORIA .fila .izquierda{
+    border-right: 2px solid #252A2E;
+}
+.HISTORIA.fila .derecha{
+    border-left: 2px solid #252A2E;
+}
+.HISTORIA .fila .item{
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252A2E;
+    position: relative;
+}
+.HISTORIA .fila .item h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.HISTORIA.fila .item .casa{
+    color: #1CB698;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.HISTORIA .fila .item .fecha{
+    display: block;
+    color: #1CB698;
+    margin-bottom: 10px;
+}
+.HISTORIA .fila .item p{
+    line-height: 24px;
+}
+.HISTORIA .fila .izq{
+    border-right: 2px solid #1CB698;
+    margin-right: 20px;
+}
+.HISTORIA .fila .der{
+    border-left: 2px solid #1CB698;
+    margin-left: 20px;
+}
+.HISTORIA.fila .item .conectori{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.HISTORIA .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+.HISTORIA.fila .item .conectord{
+    height: 2px;
+    background-color: #1CB698;
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.HISTORIA.fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1CB698;
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+/* SECCION PORTFOLIO */
+.TIPOS {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.TIPOS .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.TIPOS h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.TIPOS .galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.TIPOS .galeria .proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+.TIPOS .galeria .proyecto img{
+    width: 100%;
+    display: block;
+}
+.TIPOS .galeria .proyecto .overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+.TIPOS.galeria .proyecto .overlay h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.TIPOS .galeria .proyecto .overlay:hover{
+    opacity: 1;
+}
+.TIPOS .galeria .proyecto .overlay:hover h3{
+    margin-bottom: 0px;
+}
+/* SECCION CONTACTO */
+.CONTACTO {
+    background-image: url(img/contact_bg.png);
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0;
+}
+.CONTACTO .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.CONTACTO h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.CONTACTO .fila{
+    display: flex;
+}
+.CONTACTO .col{
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+.CONTACTO .col input, .CONTACTO .col textarea{
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+.CONTACTO button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+.CONTACTO button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.CONTACTO button:hover .overlay{
+    width: 100%;
+}
+.CONTACTO .col img{
+    width: 100%;
+}
+.CONTACTO .col .info{
+    position: absolute;
+    top: 40%;
+    background-color: #252A2E;
+    padding: 20px;
+    max-width: 350px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.CONTACTO .col .info ul{
+    list-style: none;
+}
+.CONTACTO .col .info ul li{
+    margin-bottom: 20px;
+}
+.CONTACTO .col .info ul li i{
+    color: #1CB698;
+    display: inline-block;
+    margin-right: 20px;
+}
+footer{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .DISEÑO .fila{
+        display: block;
+    }
+    .DISEÑO .fila .col{
+        width: fit-content;
+    }
+
+    .skills .fila{
+        display: block;
+    }
+    .skills .fila .col{
+        width: 100%;
+    }
+    .skills .fila .col .barra-skill{
+        width: 100%;
+    }
+
+    .HISTORIA.fila{
+        display: block;
+    }
+    .HISTORIA .fila .col{
+        width: 90%;
+    }
+    .HISTORIA.fila .derecha{
+        margin-left: 20px;
+    }
+
+    .TIPOS .galeria{
+        display: block;
+        width: 100%;
+    }
+    .TIPOS.galeria .proyecto{
+        max-width: 100%;
+    }
+    .TIPOS .galeria .proyecto img{
+        width: 100%;
+    }
+    .TIPOS .fila{
+        display: block;
+    }
+    .TIPOS .fila .col{
+        width: 100%;
+    }
+}
+
+.contenedor-diseno {
+    display: flex;
+    gap: 20px; /* Espacio entre texto e imagen */
+}
+
+.columna-texto {
+    flex: 3; /* Ocupa más espacio que la imagen */
+}
+
+.columna-imagen {
+    flex: 1; /* Ocupa menos espacio */
+}
+
+.columna-imagen img {
+    max-width: 100%; /* La imagen no supera el ancho del contenedor */
+    height: auto;
+}
+
+#form-status {
+    margin-top: 15px;
+    font-weight: bold;
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    display: inline-block; /* Para que el cuadro se ajuste al contenido */
+}
+
+/* Estilo para el mensaje de éxito */
+#form-status.success {
+    background-color: #d4edda; /* Color de fondo verde claro */
+    color: #155724; /* Color de texto verde oscuro */
+    border: 1px solid #c3e6cb; /* Borde verde */
+}
+
+/* Estilo para el mensaje de error */
+#form-status.error {
+    background-color: #f8d7da; /* Color de fondo rojo claro */
+    color: #721c24; /* Color de texto rojo oscuro */
+    border: 1px solid #f5c6cb; /* Borde rojo */
+}
